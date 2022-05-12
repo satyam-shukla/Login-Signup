@@ -6,7 +6,6 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const cpassword = document.getElementById('cpassword');
-//add event
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -20,6 +19,7 @@ form.addEventListener('submit', (event) => {
         document.getElementById('email').value = ""
         document.getElementById('password').value = ""
         document.getElementById('cpassword').value = ""
+
 
     }
 })
