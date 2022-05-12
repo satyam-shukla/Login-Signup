@@ -82,6 +82,9 @@ const saveData = () => {
         })
         localStorage.setItem("users", JSON.stringify(user_records));
         swal("Good job!", "You are Registered Successfully .. Go for Login", "success");
+        setTimeout(function () {
+            window.location.href = "../index.html"
+        }, 5000);
     }
 }
 
