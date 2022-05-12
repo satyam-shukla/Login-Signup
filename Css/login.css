@@ -128,4 +128,10 @@ body{
 
 a{
     text-decoration: none;
+    color: #ed8a7b;
+}
+
+a:hover{
+    color: #FF725E;
+
 }
