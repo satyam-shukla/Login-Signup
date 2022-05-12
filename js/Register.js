@@ -69,7 +69,6 @@ const saveData = () => {
         alert("Sorry username alredy exists")
     }
     else if (user_records.some((e) => { return e.email == email.value })) {
-        console.log("shukla")
         alert("Sorry email is already exist")
     }
     else {

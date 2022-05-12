@@ -20,14 +20,19 @@ function userLogin() {
     if (user_records.some((v) => {
         return v.username == loginUserName && v.password == loginUserPass;
     })) {
-        swal(`Good Job`, "You Have Login Successfully", "success");
-        window.location.href = "https://satyam-shukla.github.io/my_blog/"
+        swal(`Good Job`, "You Have Login Successfully, Welcome to Home Page", "success");
+        setTimeout(function () {
+            window.location.href = "https://satyam-shukla.github.io/my_blog/"
+        }, 5000);
     }
     else if (user_records.some((v) => {
         return v.email == loginUserName && v.password == loginUserPass;
     })) {
-        swal(`Good Job`, "You Have Login Successfully", "success");
-        window.location.href = "https://satyam-shukla.github.io/my_blog/"
+        swal(`Good Job`, "You Have Login Successfully, Welcome to Home Page", "success");
+        setTimeout(function () {
+            window.location.href = "https://satyam-shukla.github.io/my_blog/"
+        }, 5000);
+
     }
     else if (user_records.some((v) => {
         return v.email == loginUserName && v.password != loginUserPass;
@@ -42,4 +47,5 @@ function userLogin() {
     else {
         alert('Account is not exist,Register First');
     }
+
 }
